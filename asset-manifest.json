@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/MyPortfolio/static/js/main.e2f816ae.js",
+    "static/media/RoboFriends.png": "/MyPortfolio/static/media/RoboFriends.379bb9c30b6cbf84d1bf.png",
+    "static/media/RadDad.png": "/MyPortfolio/static/media/RadDad.3f18a634845e262addca.png",
+    "static/media/Pointing.png": "/MyPortfolio/static/media/Pointing.ea173efcaf11f9a88b25.png",
+    "static/media/LaptopWave.png": "/MyPortfolio/static/media/LaptopWave.9506d89761413b01f094.png",
+    "static/media/WeatherCheck.png": "/MyPortfolio/static/media/WeatherCheck.f5f0331c85be15aa6cb9.png",
+    "index.html": "/MyPortfolio/index.html",
+    "main.e2f816ae.js.map": "/MyPortfolio/static/js/main.e2f816ae.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e2f816ae.js"
+  ]
+}
