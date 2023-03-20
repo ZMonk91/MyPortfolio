@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Heading, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Text, useColorModeValue } from "@chakra-ui/react";
+import Heading from "./Heading";
 
 const About = () => {
   const bg = useColorModeValue("gray.50", "gray.800");
@@ -8,10 +9,8 @@ const About = () => {
   return (
     <Box id="about" bg={bg} color={color} py={16}>
       <Box maxW="xl" mx="auto" px={{ base: 4, md: 8 }}>
-        <Heading as="h2" fontSize={{ base: "3xl", md: "4xl" }} fontWeight="bold" mb={10} textAlign="center">
-          About Me
-        </Heading>
-        <Text fontSize={{ base: "xl", md: "2xl" }} mb={10}>
+        <Heading title="About Me" />
+         <Text fontSize={{ base: "xl", md: "2xl" }} mb={10}>
           My name is Zachary Monk and I'm a web developer with a focus on front-end development. I love building beautiful, responsive websites and web applications that are user-friendly and accessible to everyone.
         </Text>
         <Text fontSize={{ base: "xl", md: "2xl" }} mb={10}>
