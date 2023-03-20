@@ -1,6 +1,6 @@
 import { Heading as ChakraHeading } from '@chakra-ui/react';
 
-const Heading = ({ title }) => {
+function Heading({ title }) {
   return (
     <ChakraHeading
       as="h2"
@@ -8,8 +8,10 @@ const Heading = ({ title }) => {
       fontWeight="bold"
       mb={10}
       textAlign="center"
-    >{title}</ChakraHeading>
+    >
+      {title}
+    </ChakraHeading>
   );
-};
+}
 
-export default Heading
+export default Heading;

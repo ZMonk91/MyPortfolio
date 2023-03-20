@@ -10,19 +10,28 @@ import {
 
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
-const ProjectCard = ({ project }) => {
-let bg = useColorModeValue('white','gray.800')
+function ProjectCard({ project }) {
+  const bg = useColorModeValue('', '');
 
   return (
-    <Box key={project.id} borderWidth="1px" rounded="lg" overflow="hidden">
-      <Box p={6}>
-        <Heading textAlign={'center'} fontSize="2xl" fontWeight="bold" mb={4}>
+    <Box
+      key={project.id}
+      borderWidth="1px"
+      rounded="lg"
+      overflow="hidden"
+      backgroundImage={project.img}
+      bgPos="center"
+      bgRepeat="repeat-y"
+      bgSize="contain"
+    >
+      <Box style={{ 'backdrop-filter': 'blur(3px)' }} p={6}>
+        <Heading textAlign="center" fontSize="2xl" fontWeight="bold" mb={4}>
           {project.title}
         </Heading>
-        <Text textAlign={'center'} fontSize="lg" mb={4}>
+        <Text textAlign="center" fontSize="lg" mb={4}>
           {project.description}
         </Text>
-        <SimpleGrid minChildWidth={'64px'} columns={2} justifyItems={'center'}>
+        <SimpleGrid minChildWidth="64px" columns={2} justifyItems="center">
           <WrapItem
             as="a"
             href={project.repoLink}
@@ -30,10 +39,10 @@ let bg = useColorModeValue('white','gray.800')
             rel="noopener noreferrer"
           >
             <IconButton
-              dropShadow={'dark-lg'}
-              borderRadius={'100%'}
+              dropShadow="dark-lg"
+              borderRadius="100%"
               as={FaGithub}
-              size={'md'}
+              size="md"
               bg={bg}
             />
           </WrapItem>
@@ -48,7 +57,7 @@ let bg = useColorModeValue('white','gray.800')
             <IconButton
               as={FaExternalLinkAlt}
               size="md"
-              borderRadius={'sm'}
+              borderRadius="sm"
               bg={bg}
             />
           </WrapItem>
@@ -56,6 +65,6 @@ let bg = useColorModeValue('white','gray.800')
       </Box>
     </Box>
   );
-};
+}
 
 export default ProjectCard;

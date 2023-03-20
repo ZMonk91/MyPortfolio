@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Box,
   Text,
@@ -6,18 +6,18 @@ import {
   Textarea,
   Button,
   useColorModeValue,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react';
 
-import Heading from "./Heading";
+import Heading from './Heading';
 
-const Contact = () => {
-  const bg = useColorModeValue("gray.50", "gray.800");
-  const color = useColorModeValue("gray.800", "gray.50");
+function Contact() {
+  const bg = useColorModeValue('gray.50', 'gray.800');
+  const color = useColorModeValue('gray.800', 'gray.50');
 
   return (
     <Box id="contact" bg={bg} color={color} py={16}>
       <Box maxW="xl" mx="auto" px={{ base: 4, md: 8 }}>
-        <Heading title="Contact Me"/>
+        <Heading title="Contact Me" />
         <Box as="form" mb={8}>
           <Input type="text" placeholder="Name" size="lg" mb={4} />
           <Input type="email" placeholder="Email" size="lg" mb={4} />
@@ -32,6 +32,6 @@ const Contact = () => {
       </Box>
     </Box>
   );
-};
+}
 
 export default Contact;
