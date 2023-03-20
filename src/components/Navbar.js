@@ -3,7 +3,7 @@ import NavbarLink from './NavbarLink';
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
 const Navbar = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
     const isDarkMode = colorMode === 'light' 
   return (
     <Box

@@ -12,6 +12,7 @@ import { PROJECT_LIST as projects } from './projectList';
 const Projects = () => {
   const bg = useColorModeValue('gray.50', 'gray.800');
   const color = useColorModeValue('gray.800', 'gray.50');
+  const imgBg = useColorModeValue("black", "grey")
 
   return (
     <Box id="projects" bg={bg} color={color} py={16}>
@@ -21,7 +22,7 @@ const Projects = () => {
           {projects.map(project => (
             <ProjectCard project={project}/>
           ))}
-          <Center><Image justifyContent={'center'} name='Zachary Monk' src={require("../images/Pointing.png")} objectFit={'cover'} boxSize={{ base: "10rem", md: "17rem"}} />
+          <Center><Image style={{"filter": `drop-shadow(1px 2px 3px ${imgBg})`}} name='Zachary Monk' src={require("../images/Pointing.png")} objectFit={'cover'} boxSize={{ base: "10rem", md: "17rem"}} />
           </Center>
         </SimpleGrid>
       </Box>

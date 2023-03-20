@@ -1,14 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import {
   ChakraProvider,
   Box,
-  Heading,
   Stack,
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
 
-import { Link,Element,  animateScroll as scroll } from "react-scroll";
+import {animateScroll as scroll } from "react-scroll";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Resume from "./components/Resume";
@@ -21,7 +20,7 @@ function App() {
         scroll.scrollToTop({ smooth: "easeInOutQuad", duration: 500 })
       }
       
-  const [headerHeight, setHeaderHeight] = useState(0);
+  const [headerHeight] = useState(0);
 
   const { isOpen, onToggle } = useDisclosure();
 
