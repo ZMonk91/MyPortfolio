@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Text, useColorModeValue, Center, Image } from "@chakra-ui/react";
 import Heading from "./Heading";
 
 const About = () => {
@@ -17,8 +17,13 @@ const About = () => {
           I have experience with a variety of front-end technologies, including HTML, CSS, JavaScript, React, and more. I'm also proficient in Git and have experience working with APIs and integrating third-party libraries and services.
         </Text>
         <Text fontSize={{ base: "xl", md: "2xl" }} mb={10}>
-          When I'm not coding, you can usually find me taking my kids on adventures. I'm also a big fan of music and stand up comedy, and I enjoy trying out new foods to eat all the time.
+          When I'm not coding, you can usually find me taking my kids on adventures. 
+          <Center><Image justifyContent={'center'} name='Zachary Monk' src={require("../images/RadDad.png")} objectFit={'cover'} boxSize={{ base: "10rem", md: "17rem"}} /> I'm also a big fan of music and stand up comedy, and I enjoy trying out new foods to eat all the time.
+          </Center>
         </Text>
+        
+         
+        
       </Box>
     </Box>
   );

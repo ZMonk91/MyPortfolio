@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   Box,
-  SimpleGrid,
+  SimpleGrid, Center,
+  Image,
   useColorModeValue,
 } from '@chakra-ui/react';
 import ProjectCard from './ProjectCard';
@@ -20,6 +21,8 @@ const Projects = () => {
           {projects.map(project => (
             <ProjectCard project={project}/>
           ))}
+          <Center><Image justifyContent={'center'} name='Zachary Monk' src={require("../images/Pointing.png")} objectFit={'cover'} boxSize={{ base: "10rem", md: "17rem"}} />
+          </Center>
         </SimpleGrid>
       </Box>
     </Box>
