@@ -5,6 +5,7 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 export const ColorModeSwitcher = props => {
   const { toggleColorMode } = useColorMode();
   const text = useColorModeValue('dark', 'light');
+  const color = useColorModeValue('gray.900', 'white')
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
 
   return (
@@ -13,7 +14,7 @@ export const ColorModeSwitcher = props => {
       fontSize="lg"
       aria-label={`Switch to ${text} mode`}
       variant="ghost"
-      color="current"
+      color={color}
       marginLeft="2"
       onClick={toggleColorMode}
       icon={<SwitchIcon />}

@@ -12,7 +12,7 @@ const Hero = () => {
     <Box bg={bg} color={color}  py={40}>
       <Box maxW="xl" mx="auto" px={{ base: 4, md: 8 }} textAlign="center">
         <Heading as="h1" fontSize={{ base: "2xl", md: "4xl" }} fontWeight="bold" mb={6}>
-          Hi, I'm Zachary Monk
+          Hi, I'm <Text as='span' color={'teal.500'}>Zachary Monk</Text>
         </Heading>
         <Text fontSize={{ base: "xl", md: "2xl" }} mb={10}>
           I'm a web developer with a passion for building beautiful, responsive websites and web applications.

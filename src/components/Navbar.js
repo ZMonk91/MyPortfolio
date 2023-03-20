@@ -1,7 +1,6 @@
-import { Box, Flex, HStack, IconButton, useColorMode } from '@chakra-ui/react';
-import { FaSun, FaMoon } from 'react-icons/fa';
-import { Link as ScrollLink } from 'react-scroll';
+import { Box, Flex, HStack,useColorMode } from '@chakra-ui/react';
 import NavbarLink from './NavbarLink';
+import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -28,16 +27,7 @@ const Navbar = () => {
           <NavbarLink  linkTo={'about'}/>
           <NavbarLink  linkTo={'projects'}/>
           <NavbarLink  linkTo={'contact'}/>
-          <IconButton
-            size="md"
-            fontSize="lg"
-            aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
-            variant="ghost"
-            color="Highlight"
-            ml={{ base: '0', md: '3' }}
-            onClick={toggleColorMode}
-            icon={isDarkMode ? <FaSun /> : <FaMoon />}
-          />
+          <ColorModeSwitcher/>
         </HStack>
       </Flex>
     </Box>
